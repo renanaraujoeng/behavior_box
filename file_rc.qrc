@@ -1,0 +1,24 @@
+<RCC>
+  <qresource prefix="Icon">
+    <file>images/check-white.png</file>
+    <file>images/eye.png</file>
+    <file>images/pause-black.png</file>
+    <file>images/play-black.png</file>
+    <file>images/stop-black.png</file>
+    <file>images/link-on.png</file>
+    <file>images/update.png</file>
+    <file>images/edit.png</file>
+    <file>images/baseline_cancel_white_24dp.png</file>
+    <file>images/remove.png</file>
+    <file>images/icon100.png</file>
+    <file>images/add.png</file>
+    <file>images/Icon.ico</file>
+  </qresource>
+  <qresource prefix="Images">
+    <file>images/light-green.png</file>
+    <file>images/light-red.png</file>
+  </qresource>
+  <qresource prefix="Logo">
+    <file>images/logo.png</file>
+  </qresource>
+</RCC>

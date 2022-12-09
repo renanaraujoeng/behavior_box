@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Login</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/Icon/Images/Icon.ico</normaloff>:/Icon/Images/Icon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(200, 200, 200);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="content">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QFrame" name="login_area">
+         <property name="maximumSize">
+          <size>
+           <width>450</width>
+           <height>500</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius: 10px;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="logo">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>40</y>
+            <width>220</width>
+            <height>140</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-image: url(:/Logo/images/logo.png);
+background-repeat: no-repeat;
+background-position: center;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="txt_user">
+          <property name="geometry">
+           <rect>
+            <x>85</x>
+            <y>228</y>
+            <width>280</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	padding: 15px;
+	background-color: rgb(30, 30, 30);	
+	color: rgb(170, 170, 170);
+}
+QLineEdit:hover {
+	border: 2px solid rgb(30, 30, 30);
+}
+QLineEdit:focus {
+	border: 3px solid rgb(35, 39, 145);	
+	color: rgb(255, 255, 255);
+}</string>
+          </property>
+          <property name="maxLength">
+           <number>32</number>
+          </property>
+          <property name="placeholderText">
+           <string>USER</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="txt_password">
+          <property name="geometry">
+           <rect>
+            <x>85</x>
+            <y>300</y>
+            <width>280</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+	border: 2px solid rgb(45, 45, 45);
+	border-radius: 5px;
+	padding: 15px;
+	background-color: rgb(30, 30, 30);	
+	color: rgb(170, 170, 170);
+}
+QLineEdit:hover {
+	border: 2px solid rgb(30, 30, 30);
+}
+QLineEdit:focus {
+	border: 3px solid rgb(35, 39, 145);	
+	color: rgb(255, 255, 255);
+}</string>
+          </property>
+          <property name="maxLength">
+           <number>16</number>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+          <property name="placeholderText">
+           <string>PASSWORD</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="bt_login">
+          <property name="geometry">
+           <rect>
+            <x>85</x>
+            <y>385</y>
+            <width>280</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {	
+	background-color: rgb(67, 93, 165);
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+}
+QPushButton:hover {	
+	background-color: rgb(35, 39, 145);
+}
+QPushButton:pressed {	
+	background-color: rgb(67, 93, 165);
+}</string>
+          </property>
+          <property name="text">
+           <string>LOGIN</string>
+          </property>
+         </widget>
+         <widget class="QFrame" name="avatar">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>60</y>
+            <width>100</width>
+            <height>100</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame {
+	border-image: url(:/Icon/images/icon100.png);
+	border-radius: 60px;
+	border: 10px solid rgb(255, 207, 0);
+	background-position: center;
+}
+QFrame:hover {
+	border: 10px solid rgb(255, 225, 0);
+}
+
+</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="file_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
